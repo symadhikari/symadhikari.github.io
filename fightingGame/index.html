@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+	<div style="float:left;margin-top: 20px;"><a href="../index.html" style="margin-left:10px;font-size: 20px;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:black;float:left;margin-bottom: 10px;">Go Back To HomePage</a></button><div ><img src="./img/keys1.png" width="300px"></div>
+	<div style="margin-top: 30px;"><img src="./img/keys2.png" width="300px" ></div></div>
+	<div style="position:relative;display: inline-block;float:right;">
+		<!-- top bar -->
+		<div style="position:absolute;display:flex;width:100%;padding:20px;align-items: center;">
+			<!-- player health -->
+			<div style="position: relative;height: 30px;width:100%;display:flex;justify-content:flex-end;">
+				<div class="healthbar" ></div>
+				<div id="playerHealth" style="position: absolute;background: yellow; top: 0;right: 0;bottom: 0;width:100%; margin-top: 4px;margin-left: 4px;margin-bottom: 4px;"></div>
+			</div>
+			<!-- timer -->
+			<div id="timer">
+		        10
+		    </div>
+			<!-- enemy health -->
+			<div style="position: relative;height: 30px;width:100%;">
+				<div class="healthbar" style="border-right: 4px solid white;"></div>
+				<div id="enemyHealth" style="position: absolute;background: yellow; top: 0;right: 0;bottom: 0;left: 0;margin-top: 4px;margin-bottom: 4px;"></div>
+			</div>
+		</div>
+		<div id="theend" style="display:none;width:240px;height:100px;background-color: rgba(0,0,0,0.7);position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+			<div id="endMessage"></div>
+			<button style="position: absolute;bottom:5%;left:33%;border:none;border-radius: 20px; color: black;background-color: white;padding: 8px;cursor: pointer;margin-top: 5px;" onClick="window.location.reload();">Play Again</button>
+		</div>
+		
+		<canvas></canvas>
+		
+	</div>
+	
+	<script src="js/utils.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="script.js"></script>
+</body>
